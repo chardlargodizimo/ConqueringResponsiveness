@@ -1,0 +1,148 @@
+:root {
+    --clr-light: #F3EED9;
+    --clr-dark: #222C2A;
+    --clr-accent: #824936;
+
+    --fs-300: 1.125rem;
+    --fs-400: 1.3125rem;
+    --fs-700: 2.5rem;
+    --fs-900: 3rem;
+
+    --fs-primary-heading: var(--fs-900);
+    --fs-primary-heading-light: var(--fs-300);
+    --fs-secondary-heading: var(--fs-700);
+    --fs-body: var(--fs-400);
+
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-bold: 700;
+    --fw-black: 900;
+
+    --ff-primary: 'Roboto', sans-serif;
+    --ff-secondary: 'Playfair Display', serif;
+
+    --ff-heading: var(--ff-secondary);
+    --ff-body: var(--ff-primary);
+    
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--ff-body);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2 {
+    line-height: 1.1;
+}
+
+section {
+    padding: 4em 0;
+}
+
+/* typography */
+
+.hero__title {
+    color: var(--clr-accent);
+    font-family: var(--ff-heading);
+    font-weight: var(--fw-black);
+    font-size: var(--fs-900);
+}
+
+@media (min-width: 50em) {
+    .hero__title {
+        font-size: 4.5rem;
+    }
+}
+
+.hero__text {
+    font-size: var(--fs-primary-heading-light);
+    font-weight: var(--fw-light);
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+}
+
+.secondary-heading__title {
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-700);
+}
+
+.secondary-heading__text {
+    margin-block: 2em;
+}
+
+.secondary-heading__title,
+.secondary-heading__text {
+    color: #fff;
+}
+
+.secondary-heading__title--dark {
+    color: var(--clr-accent);
+    font-size: var(--fs-700);
+    font-family: var(--ff-heading);
+    text-align: center;
+}
+
+.secondary-heading__text--dark {
+    color: var(--clr-dark);
+    margin-top: 2em;
+}
+
+/* hero section */
+
+.hero {
+    min-height: 660px;
+    background: var(--clr-light);
+    padding: 200px 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+/* section 2 */
+
+.section-dark {
+    background: var(--clr-dark);
+}
+
+/* section 3 */
+
+.section-accent {
+    background: var(--clr-accent);
+}
+
+/* utility classes */
+
+.wrapper {
+    width: 85%;
+    max-width: 1128px;
+    margin: 0 auto;
+}
+
+@media (min-width: 50em) {
+    .row {
+        display: flex;
+        gap: 5em;
+        /* justify-content: space-between; */
+    }
+
+    .col {
+       width: 100%;
+    }
+
+    .row-reverse {
+        flex-direction: row-reverse;
+    }
+}
+

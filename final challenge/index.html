@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conquering Responsive Websites</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="height: 100vh;">
+    
+    <nav class="navbar ">
+        <div class="wrapper navbar-container">
+            <label class="hamburger-menu">
+                <input type="checkbox">
+            </label>
+            <nav class="primary-nav">
+                <ul class="primary-nav__list">
+                    <li class="primary-nav__item"><a class="primary-nav__link" href="#">Home</a></li>
+                    <li class="primary-nav__item"><a class="primary-nav__link" href="#">About</a></li>
+                    <li class="primary-nav__item"><a class="primary-nav__link" href="#">Contact</a></li>
+                    <li class="primary-nav__item"><a class="primary-nav__link" href="#">Sign in</a></li>
+                    <li class="primary-nav__item" data-nav-button="button"><a class="primary-nav__link" href="#">Sign up</a></li>
+                </ul>
+            </nav>
+            <div class="nav__logo">
+                <img src="../final challenge/img/logo.svg" alt="conquering responsive websites logo">
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="wrapper flex-container flow">
+            <h1 class="primary-heading"><span class="hero-focus">Responsive layouts</span> don't have to be a struggle</h1>
+            <div class="hero-aside">
+                <p class="hero-desc">Effortless design with layouts that adapt seamlessly. Redefine responsiveness for a beautiful experience across devices. Simplify your approach today.</p>
+                <button class="button">I want to learn</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="features">
+            <div class="wrapper">
+                <div class="flex-container flow">
+                    <div class="feature-item">
+                        <h2 class="secondary-heading">Mobile-first</h2>
+                        <p>Design excellence, prioritize mobile. Elevate user experience seamlessly on all devices.</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <h2 class="secondary-heading">Efficient</h2>
+                        <p>Streamline your workflow with efficiency. Design seamlessly, ensuring optimal performance and user satisfaction.</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <h2 class="secondary-heading">Done right</h2>
+                        <p>Experience meticulous craftsmanship, delivering interfaces for flawless user interaction and aesthetic perfection.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="wrapper flex-container">
+                <article class="article flow">
+                    <h2 class="article-title">It doesn't have to be so hard</h2>
+                    <p class="article-desc">Embark on an effortless journey with our user-friendly solutions. Bid farewell to complexity as we unravel design intricacies in the friendliest way possible. Achieve your goals joyfully with our dedicated team, turning every step into a delightful experience. Welcome to design simplicity at its best.</p>
+                    <div class="article-img">
+                        <img src="../final challenge/img/hero-img.jpg" alt="wireframe sketches">
+                    </div>
+                    <p class="article-desc">Embark on an adventure where our easy-to-use solutions make design and development as simple as a breeze. No need for tough journeys – achieving your goals is now a fun and joyful ride! Let's make it easy-peasy for you! </p>
+                </article>
+                <aside class="sidebar grid-container flow">
+                    <div class="sidebar-item">
+                        <h2 class="secondary-heading" data-color="white">Break it down</h2>
+                        <p>Unlock simplicity! Our team weaves digital magic, ensuring each piece fits seamlessly. Dive into user-friendly design with us!</p>
+                    </div>
+                    <div class="sidebar-item">
+                        <h2 class="secondary-heading" data-color="white">Work your way up</h2>
+                        <p>Ascend with us! Navigate digital heights effortlessly. We empower your journey, ensuring each step is a rewarding ascent. </p>
+                    </div>
+                    <div class="sidebar-item">
+                        <h2 class="secondary-heading" data-color="white">Smash it</h2>
+                        <p>Crush your goals with us! We turn challenges into victories, crafting powerful solutions. Let's smash barriers and soar together! </p>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="wrapper flow">
+            <h2 class="footer-heading">Just scratching the surface</h2>
+            
+            <div class="flex-container footer-contents flow">
+                <div class="footer-about">
+                    <h3 class="footer-subheading">About our company</h3>
+                    <p class="footer-desc">Step into digital brilliance with our friendly touch! Our expert team crafts websites that dance across screens. Your online journey just got a lot more exciting - let's make your brand shine together!</p>
+                </div>
+                <div class="footer-menu grid-container flow">
+                    <div class="footer-item">
+                        <h3 class="footer-subheading">Getting around</h3>
+                        <nav class="secondary-nav">
+                            <ul class="secondary-nav__list">
+                                <li class="secondary-nav__item"><a class="secondary-nav__link" href="#">Home</a></li>
+                                <li class="secondary-nav__item"><a class="secondary-nav__link" href="#">About</a></li>
+                                <li class="secondary-nav__item"><a class="secondary-nav__link" href="#">Contact</a></li>
+                            </ul>
+                        </nav>    
+                    </div>
+
+                    <div class="footer-item">
+                        <h3 class="footer-subheading">Other things</h3>
+                        <nav class="secondary-nav">
+                            <ul class="secondary-nav__list">
+                                <li class="secondary-nav__item"><a class="secondary-nav__link" href="#">Home</a></li>
+                                <li class="secondary-nav__item"><a class="secondary-nav__link" href="#">About</a></li>
+                                <li class="secondary-nav__item"><a class="secondary-nav__link" href="#">Contact</a></li>
+                            </ul>
+                        </nav>    
+                    </div>
+
+                    <div class="footer-item">
+                        <h3 class="footer-subheading">And more</h3>
+                        <nav class="secondary-nav">
+                            <ul class="secondary-nav__list">
+                                <li class="secondary-nav__item"><a class="secondary-nav__link" href="#">Home</a></li>
+                                <li class="secondary-nav__item"><a class="secondary-nav__link" href="#">About</a></li>
+                                <li class="secondary-nav__item"><a class="secondary-nav__link" href="#">Contact</a></li>
+                            </ul>
+                        </nav>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
