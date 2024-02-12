@@ -222,6 +222,11 @@ section, footer {
     text-decoration: none;
 }
 
+.primary-nav__link:hover,
+.secondary-nav__link:hover {
+    opacity: .75;
+}
+
 .secondary-nav__item {
     list-style-type: none;
     line-height: 3;
@@ -290,7 +295,6 @@ section, footer {
         left: calc(var(---section-padding-inline) * -1);
         
     }
-
     /* hamburger menu */
     .hamburger-menu {
         --x-bar-width: calc(var(--hamburger-height) * 1.41421356237);
@@ -482,6 +486,7 @@ section, footer {
 /* button */
 
 .button {
+    cursor: pointer;
     font-family: var(--ff-secondary);
     font-weight: var(--fw-700);
     font-size: var(--fs-600);
@@ -492,7 +497,14 @@ section, footer {
     border-radius: 100vw;
     text-decoration: none;
     text-transform: uppercase;
-    
+}
+
+.button:hover {
+    opacity: .75;
+}
+
+.primary-nav__item[data-nav-button="button"]:hover .primary-nav__link{
+    opacity: 0.75;
 }
 
 
